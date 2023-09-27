@@ -1,0 +1,214 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  background: #fff;
+  margin: 5% auto;
+  padding: 80px;
+  border-radius: 16px;
+}
+
+.main-container h1 {
+  font-size: 2.063em;
+  margin: 10px;
+  font-family: "Gilroy-bold", sans-serif;
+}
+.main-container p {
+  margin: 10px;
+}
+
+/* Holding container */
+.holding-container {
+  display: flex;
+}
+
+/* Left section */
+.left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+/* Accordion section */
+.accordion-section {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #1a2538;
+}
+
+/* Accordion header */
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.accordion-header h2 {
+  font-family: "Gilroy-bold", sans-serif;
+  font-size: 1.438em;
+}
+
+/* Arrow icons */
+.arrow {
+  border: solid;
+  border-width: 0 0.15em 0.15em 0;
+  display: inline-block;
+  padding: 0.12em;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  color: #3a86ff;
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  color: #f26b2c;
+}
+/* Expanded state for header and content */
+
+/* Accordion content */
+.accordion-content {
+  display: none;
+  padding: 12px;
+  background-color: #fff;
+}
+
+/* Expanded state for content */
+.expanded .accordion-content {
+  display: block;
+}
+
+/* Text content within left accordion */
+.left-section-content {
+  flex: 1;
+}
+
+.left-section p {
+  margin: 0;
+  text-align: left;
+}
+/*Buttons*/
+
+.cta-buttons {
+  padding: 40px 0 30px 0;
+  text-align: left;
+}
+
+.primary-button {
+  background-color: #f26b2c;
+  color: #fff;
+  padding: 14px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-flex;
+  margin-right: 10px;
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+  font-weight: 600;
+}
+
+.primary-button:hover {
+  background-color: #ff8c57;
+  color: #fff;
+}
+
+.secondary-button {
+  background-color: #fff;
+  color: #2b5b92;
+  padding: 14px 16px;
+  border: 1px solid #2b5b92;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-flex;
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+  font-weight: 600;
+}
+
+.secondary-button:hover {
+  background-color: #3a86ff;
+  color: #fff;
+  border-color: #3a86ff;
+}
+
+/* Right section */
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Images within right section */
+.image-container {
+  display: block;
+}
+
+/* Expanded state for images */
+.expanded .image-container {
+  display: none;
+}
+
+.right-section img {
+  max-width: 100%;
+  margin: 10px;
+  height: auto;
+}
+
+/*animation expanded image*/
+.image-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.image-container.slide-up {
+  max-height: 500px;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.image-container.slide-down {
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+
+@media (max-width: 992px) {
+  .main-container {
+    width: 90%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .holding-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav {
+    justify-content: center;
+  }
+  .nav-menu,
+  .nav {
+    margin: 0 10px;
+  }
+  .primary-button {
+    margin-bottom: 10px;
+  }
+
+  .primary-button,
+  .secondary-button {
+    min-width: 150px;
+    justify-content: center;
+  }
+}
