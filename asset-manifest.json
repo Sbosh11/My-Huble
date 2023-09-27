@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/my-huble/static/css/main.fdebe722.css",
+    "main.js": "/my-huble/static/js/main.61cb1805.js",
+    "static/js/787.c41a2298.chunk.js": "/my-huble/static/js/787.c41a2298.chunk.js",
+    "static/media/Title-Escrow.webp": "/my-huble/static/media/Title-Escrow.40676709c64353447f58.webp",
+    "static/media/Lender-Accordion-eVault.webp": "/my-huble/static/media/Lender-Accordion-eVault.9cbe44a30bf7462a6d70.webp",
+    "static/media/Scheduling.webp": "/my-huble/static/media/Scheduling.e52749fa3519e7713881.webp",
+    "static/media/Notary-signing-Agents.webp": "/my-huble/static/media/Notary-signing-Agents.d4b6d8564389afda5799.webp",
+    "index.html": "/my-huble/index.html",
+    "main.fdebe722.css.map": "/my-huble/static/css/main.fdebe722.css.map",
+    "main.61cb1805.js.map": "/my-huble/static/js/main.61cb1805.js.map",
+    "787.c41a2298.chunk.js.map": "/my-huble/static/js/787.c41a2298.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fdebe722.css",
+    "static/js/main.61cb1805.js"
+  ]
+}
